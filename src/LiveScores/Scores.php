@@ -51,7 +51,7 @@ class Scores implements MessageComponentInterface {
                 echo "add" + $message->name;
                 $this->chatters[$id] = array(
                     'id' => $id,
-                    'user' => $this->user,
+                    'user' => $message->user,
                     'message' => $message->message,
                     'time' => time()
                 );

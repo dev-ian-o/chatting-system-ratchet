@@ -27,12 +27,13 @@
 		console.log(chatters);
 		$.each(chatters, function(id){
 			var chat = chatters[id];
-			$('.messages').append("<div>Name:</div>"+chat.user+"<div>"+ chat.message +"</div>");
+
+			$('.messages').prepend("<div class='col-xs-4 name'>Name:<b>"+chat.user+"</b></div><div class='msg col-xs-8'>Message: <b>"+ chat.message +"</b></div>");
 		});
 	}
 	function addMsg(message){
 		// console.log(message);
-		$('.messages').append("<div>Name:</div>"+message.user+"<div>"+ message.message +"</div>");
+		$('.messages').prepend("<div class='col-xs-4 name'>Name:<b>"+message.user+"</b></div><div class='msg col-xs-8'>Message: <b>"+ message.message +"</b></div>");
 	}
 
 $(function () {

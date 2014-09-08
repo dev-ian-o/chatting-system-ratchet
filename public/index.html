@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-      
+    
     <link rel="stylesheet" href="assets/css/vendor/counter.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style type="text/css">
+      .box-msg{
+        width: 100%;
+        height: 400px; 
+        overflow: scroll;
+      }
+      .name{
+        /*width: 400px;*/
+        font-size: 20px;
+        padding: 10px;
+        background-color: Green;
+        color:#FFF;
+      }
+      .msg{
+        /*width: 100px;*/
+        font-size: 20px;
+        background-color: #FFF;
+        color: #000;
+
+        padding: 10px;
+
+      }
+    </style>
 
   </head>
   <body>
-    <h1>Live Scores</h1>
-
-<!--     <div id="scoreboard">
-
-      <table>
-        
-      </table>
-
-    </div> -->
 
     <h1>Chatting here </h1>
       Message: <input type="text" class="name-chat">
     <div class="input-here">
       input here:<input type="text" class="msg-chat">
     </div>
-
-    <div class="messages"></div>
+    <div class="box-msg">
+      <div class="messages"></div>
+    </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>    
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
